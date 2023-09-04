@@ -1,6 +1,6 @@
 n = int(input("Enter n: "))
 
-power = 0
+power = 1
 num = 1
 
 while num < n:
