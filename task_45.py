@@ -11,14 +11,12 @@ for i in range(2, k):
 
     friendly_dict[i] = div_sum
 
-repeats = list()
 for num, value in friendly_dict.items():
     if (
         friendly_dict[num] == value
         and value in friendly_dict
         and friendly_dict[value] == num
         and num != value
-        and (value, num) not in repeats
+        and num > value
     ):
-        repeats.append((num, value))
         print(num, value)
